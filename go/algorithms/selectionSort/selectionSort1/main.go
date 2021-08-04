@@ -12,7 +12,7 @@ func selectionSort(items []int) {
 	var n = len(items)
 	for i := 0; i < n; i++ {
 		var minIdx = i
-		for j := 0; i < n-1; i++ {
+		for j := i; j < n; j++ {
 			if items[j] < items[minIdx] {
 				minIdx = j
 			}
